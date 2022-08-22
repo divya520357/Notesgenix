@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+.nav-heading{
+    font-family: 'Butterfly Kids', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+}
+
+.login-form{
+    background-color: #FFE5A1;
+}
+
+.fa-user,.fa-lock{
+    background-color: #585858;
+    color: #d9d9d9;
+}
+
+.login-btn{
+    background-color: white;
+}
