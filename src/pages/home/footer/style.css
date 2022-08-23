@@ -1,5 +1,6 @@
 .footer-bar a {
     width: 33%;
+    color: var(--gray);
 }
 
 .footer-bar i {

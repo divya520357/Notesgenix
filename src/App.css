@@ -1,5 +1,6 @@
 :root {
   --yellow: #FFE5A1;
+  --gray: #585858;
 }
 
 * {
@@ -15,6 +16,10 @@
 
 .bg-yellow {
   background-color: var(--yellow);
+}
+
+.text-gray {
+  color: var(--gray);
 }
 
 .pg-breaker {
