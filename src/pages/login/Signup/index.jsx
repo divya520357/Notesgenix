@@ -1,5 +1,5 @@
 // import { useState, useEffect } from 'react';
-import { useState} from 'react';
+import { useState } from 'react';
 
 import './style.css';
 
@@ -10,8 +10,8 @@ const Signup = () => {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        if (username === "test" && pass === "test@123test") {
-            localStorage.setItem('username', 'test');
+        if (username === "Test" && pass === "test@123test") {
+            localStorage.setItem('username', 'Test');
             localStorage.setItem('pass', 'test@123test');
             window.location = "/home";
         }
@@ -38,7 +38,7 @@ const Signup = () => {
                     <button type="submit" className="btn login-btn rounded-5 m-4 px-5">Login</button>
                 </form>
                 <p className='no-acc'>Don’t have an account?
-                    <a href="." className="sign-btn link-dark"> Sign Up</a>
+                    <a href="/" className="sign-btn link-dark"> Sign Up</a>
                 </p>
             </div>
         </div>
