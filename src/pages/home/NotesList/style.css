@@ -1,0 +1,10 @@
+.notes-card{
+    background-color: #FFF8E4;
+}
+
+.card-body:before{
+    content: "";
+    height: 1px;
+    background-color: black;
+    display: block;
+}
