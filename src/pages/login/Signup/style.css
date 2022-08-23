@@ -17,4 +17,14 @@
 
 .login-btn {
     background-color: white;
+    cursor: pointer;
+}
+
+.no-acc{
+    color: grey;
+}
+
+.sign-btn{
+    text-decoration: none;
+    cursor: pointer;
 }

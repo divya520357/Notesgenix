@@ -17,8 +17,8 @@ const Signup = () => {
                     </div>
                     <button type="submit" className="btn login-btn rounded-5 m-4 px-5">Login</button>
                 </form>
-                <p>Don’t have an account?
-                    <button className='btn p-0'>Sign up</button>
+                <p className='no-acc'>Don’t have an account?
+                    <a href="." className="sign-btn link-dark"> Sign Up</a>
                 </p>
             </div>
         </div>
