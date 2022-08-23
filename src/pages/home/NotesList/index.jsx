@@ -3,14 +3,18 @@ import NotesCard from './NotesCard';
 
 const NotesList = () => {
     const Notes = [
-        "Biology", "Physiology","Pathology","Anatomy","Physiology"
+        {name:"Biology", id: 1},
+        {name:"Physiology", id:2},
+        {name:"Pathology", id:3},
+        {name:"Anatomy",id:4},
+        {name:"Physiology", id:5}
     ]
 
     return (
         <>
             <div className="container home_notes_container d-flex flex-wrap justify-content-evenly">
                 {Notes.map(Note =>(
-                    <NotesCard note={Note}/>
+                    <NotesCard key={Note.id} note={Note.name}/>
                 ))}
             </div>
             

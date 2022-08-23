@@ -6,10 +6,6 @@ import NotesList from './NotesList';
 import Footer from './footer';
 
 const Home = () => {
-    const NotesFooter={
-        boxShadow: "inset 0px 4px 4px #FFE5A1"
-    }
-
     useEffect(() => {
         if (localStorage.username !== "test" || localStorage.pass !== "test@123test") {
             window.location = "/";
@@ -19,7 +15,7 @@ const Home = () => {
         <>
             <Navbar />
             <NotesList />
-            <Footer style={NotesFooter} />
+            <Footer />
         </>
     )
 };
