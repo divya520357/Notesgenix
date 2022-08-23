@@ -3,6 +3,12 @@
     color: var(--gray);
 }
 
+.footer-bar .active {
+    background: linear-gradient(to left, #9c5b00, #ffc430);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .footer-bar i {
     font-size: 1.4rem;
 }

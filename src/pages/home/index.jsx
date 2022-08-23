@@ -6,8 +6,9 @@ import NotesList from './NotesList';
 import Footer from './footer';
 
 const Home = () => {
+
     useEffect(() => {
-        if (localStorage.username !== "test" || localStorage.pass !== "test@123test") {
+        if (localStorage.username !== "Test" || localStorage.pass !== "test@123test") {
             window.location = "/";
         }
     }, [])

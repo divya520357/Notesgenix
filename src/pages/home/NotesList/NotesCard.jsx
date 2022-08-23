@@ -11,5 +11,5 @@ const NotesCard = (props) => {
          </div>
     );
 }
- 
+
 export default NotesCard;
