@@ -20,6 +20,12 @@
     cursor: pointer;
 }
 
+.login-btn:hover{
+    background-color: #d9d9d9;
+    border-color: #d9d9d9;
+    /* color: white; */
+}
+
 .no-acc{
     color: grey;
 }
