@@ -10,6 +10,8 @@ const Signup = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (username === "test" && pass === "test@123test") {
+            localStorage.setItem('username', 'test');
+            localStorage.setItem('pass', 'test@123test');
             window.location = "/home";
         }
 
