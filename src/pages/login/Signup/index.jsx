@@ -11,8 +11,8 @@ const Signup = () => {
                         <span className="input-group-text"><i className="fa-solid fa-user rounded-circle p-2"></i></span>
                         <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" />
                     </div>
-                    <div class="input-group flex-nowrap ">
-                        <span class="input-group-text" id="addon-wrapping"><i className="fa-solid fa-lock rounded-circle p-2"></i></span>
+                    <div className="input-group flex-nowrap ">
+                        <span className="input-group-text" id="addon-wrapping"><i className="fa-solid fa-lock rounded-circle p-2"></i></span>
                         <input type="password" className="form-control" placeholder="Password" aria-label="password" aria-describedby="addon-wrapping" />
                     </div>
                     <button type="submit" className="btn login-btn rounded-5 m-4 px-5">Login</button>

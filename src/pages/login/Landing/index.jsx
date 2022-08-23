@@ -5,6 +5,7 @@ const Landing = () => {
     function screensplash() {
         setTimeout(() => {
             document.getElementById("landing-page").style.opacity = "0";
+            document.getElementById("landing-page").style.zIndex = "-1";
         }, 4000);
     }
 
