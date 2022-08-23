@@ -16,3 +16,9 @@
 .bg-yellow {
   background-color: var(--yellow);
 }
+
+.pg-breaker {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(160, 160, 160, 0.412);
+}
