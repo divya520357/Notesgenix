@@ -1,0 +1,23 @@
+.landingpage_container {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+}
+
+.landingpage_logo {
+    width: 12rem;
+}
+
+.landingpage_text {
+    font-family: 'Butterfly Kids', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+}
