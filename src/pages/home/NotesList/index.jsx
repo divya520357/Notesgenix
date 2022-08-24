@@ -14,7 +14,7 @@ const NotesList = () => {
         <>
             <div className="container home_notes_container d-flex flex-wrap justify-content-evenly">
                 {Notes.map(Note =>(
-                    <NotesCard key={Note.id} note={Note.name}/>
+                    <NotesCard key={Note.id} note={Note}/>
                 ))}
             </div>
             
