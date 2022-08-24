@@ -15,7 +15,7 @@ const Footer = () => {
                         Home
                     </NavLink>
                     <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes/personal'>
-                        <i className="fa-regular fa-file p-1"></i>
+                        <i className="fa-solid fa-file p-1"></i>
                         Notes
                     </NavLink>
                     <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/books'>
@@ -23,7 +23,7 @@ const Footer = () => {
                         Books
                     </NavLink>
                     <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/account'>
-                        <i className="fa-regular fa-user p-1"></i>
+                        <i className="fa-solid fa-user p-1"></i>
                         Account
                     </NavLink>
                 </div>
