@@ -11,13 +11,13 @@ const Home = () => {
     }
 
     useEffect(() => {
-        if (localStorage.username !== "Test" || localStorage.pass !== "test@123test") {
+        if (localStorage.username !== "test" || localStorage.pass !== "test@123test") {
             window.location = "/";
         }
     }, [])
     return (
         <>
-            <Navbar />
+            <Navbar heading1='personal' heading2='private' />
             <NotesList />
             <Footer style={NotesFooter} />
         </>

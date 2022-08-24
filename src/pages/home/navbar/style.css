@@ -1,3 +1,7 @@
 .home_heading {
     font-size: 3rem;
 }
+
+.home_nav a {
+    color: var(--gray);
+}
