@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import './style.css';
-import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ heading1 = "Personal", heading2 = "Shared" }) => {
 
