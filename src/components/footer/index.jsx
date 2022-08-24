@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
-
     return (
         <>
             <div className="footer-container position-fixed bottom-0 w-100 bg-white">

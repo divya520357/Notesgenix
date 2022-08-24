@@ -31,3 +31,16 @@
   height: 5px;
   background-color: rgba(160, 160, 160, 0.412);
 }
+
+.btnShadow {
+  content: "";
+  width: 27%;
+  height: 0.4rem;
+  background: var(--yellow);
+  position: absolute;
+  bottom: -30%;
+  left: 11%;
+  z-index: -1;
+  border-radius: 50px 50px 0 0;
+  transition: all 0.3s ease-in-out;
+}
