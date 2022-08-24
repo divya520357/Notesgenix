@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import Home from './pages/home';
+import PersonalNotes from './pages/home/NotesList/personal';
+import SharedList from './pages/home/NotesList/shared';
 import Login from './pages/login';
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login />} />
           <Route exact path='/home' element={<Home />} />
+          <Route exact path='/notes' element={<PersonalNotes />} />
+          <Route exact path='/notes/personal' element={<PersonalNotes />} />
+          <Route exact path='/notes/shared' element={<SharedList />} />
         </Routes>
       </Router>
     </>

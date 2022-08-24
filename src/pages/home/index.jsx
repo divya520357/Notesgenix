@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react'
 import './style.css';
 
-import Navbar from './navbar';
-import NotesList from './NotesList';
-import Footer from './footer';
+import PersonalNotes from './NotesList/personal';
+
 
 const Home = () => {
 
@@ -14,9 +13,7 @@ const Home = () => {
     }, [])
     return (
         <>
-            <Navbar />
-            <NotesList />
-            <Footer />
+            <PersonalNotes />
         </>
     )
 };
