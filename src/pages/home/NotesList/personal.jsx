@@ -15,7 +15,7 @@ const PersonalNotes = () => {
     return (
         <>
             <Navbar />
-                <div className="container home_notes_container d-flex flex-wrap justify-content-evenly">
+                <div className="container home_notes_container d-flex flex-wrap justify-content-evenly ">
                     {Notes.map(Note =>(
                         <NotesCard key={Note.id} note={Note}/>
                     ))}

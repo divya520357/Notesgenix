@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-container position-fixed bottom-0 w-100 bg-white">
                 <div className="pg-breaker"></div>
                 <div className="footer-bar d-flex align-items-center justify-content-center mt-1 mb-2">
-                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/home'>
+                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes/personal'>
                         <i className="fa-regular fa-file p-1"></i>
                         Notes
                     </NavLink>
