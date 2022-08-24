@@ -7,7 +7,7 @@ import Login from './pages/login';
 import Home from './pages/home';
 // import Notes from './pages/notes';
 import Books from './pages/books';
-// import Account from './pages/account';
+import Account from './pages/account';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/home' element={<Home />} />
           {/* <Route exact path='/notes' element={<Notes />} /> */}
           <Route exact path='/books' element={<Books />} />
-          {/* <Route exact path='/account' element={<Account />} /> */}
+          <Route exact path='/account' element={<Account />} />
         </Routes>
       </Router>
     </>
