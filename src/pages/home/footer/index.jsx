@@ -1,7 +1,10 @@
 import './style.css';
 import { NavLink } from 'react-router-dom';
 
+
 const Footer = () => {
+
+
     return (
         <>
             <div className="footer-container position-fixed bottom-0 w-100 bg-white">
@@ -11,7 +14,7 @@ const Footer = () => {
                         <i className="fa-solid fa-house p-1"></i>
                         Home
                     </NavLink>
-                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes'>
+                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes/personal'>
                         <i className="fa-regular fa-file p-1"></i>
                         Notes
                     </NavLink>

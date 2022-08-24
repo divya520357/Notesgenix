@@ -5,3 +5,7 @@
 .home_nav a {
     color: var(--gray);
 }
+
+.personal-btn:active {
+    text-decoration: underline;
+}
