@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './pages/login';
 import Home from './pages/home';
 // import Notes from './pages/notes';
-// import Books from './pages/books';
+import Books from './pages/books';
 // import Account from './pages/account';
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Login />} />
           <Route exact path='/home' element={<Home />} />
-          {/* <Route exact path='/notes' element={<Notes />} />
+          {/* <Route exact path='/notes' element={<Notes />} /> */}
           <Route exact path='/books' element={<Books />} />
-          <Route exact path='/account' element={<Account />} /> */}
+          {/* <Route exact path='/account' element={<Account />} /> */}
         </Routes>
       </Router>
     </>
