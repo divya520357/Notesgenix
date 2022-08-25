@@ -16,10 +16,13 @@ const ItemCard = (props) => {
         overlay.current.style.bottom = '-100%';
         overlay.current.style.transition = 'all ease-in 0.6s'
     }
+
+    let na = (process.env.PUBLIC_URL + `./assets/${props.data.name}-${props.data.type}.png`)
+    let pa = (process.env.PUBLIC_URL + `./assets/${props.data.type}-image.png`)
     return (
         <>
             <div className="card notes-card m-3 position-relative" style={{ width: "8rem" }}>
-                <img src={process.env.PUBLIC_URL + `./assets/${props.data.type}-image.png`} className="card-img-top p-2 pb-0" alt={props.data.name} />
+                <img src={na ? na : pa} className="card-img-top p-2 pb-0" alt={props.data.name} />
                 <div className="card-body py-1 px-0">
                     <p className="card-desc card-text text-center mx-1 my-0">{props.data.name}</p>
                     {(props.data.owner) ? (<p className="card-desc card-text text-center mx-1" style={{ fontSize: '0.6rem' }}>{props.data.owner}</p>) : (<></>)}
