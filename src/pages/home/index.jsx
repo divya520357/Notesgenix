@@ -14,11 +14,11 @@ const Home = () => {
     // importing data
     const notes = [
         { name: "Biology", id: 1, owner: null, star: false, type: 'note' },
-        { name: "Anatomy", id: 9, owner: null, star: true, type: 'book' },
+        { name: "Anatomy", id: 4, owner: null, star: false, type: 'book' },
         { name: "Physiology", id: 10, owner: 'apple29', star: false, type: 'note' },
         { name: "Pathology", id: 3, owner: null, star: false, type: 'book' },
-        { name: "Anatomy", id: 4, owner: null, star: false, type: 'book' },
         { name: "Physiology", id: 7, owner: 'luck01', star: true, type: 'note' },
+        { name: "Anatomy", id: 9, owner: null, star: true, type: 'book' },
         { name: "Physiology", id: 10, owner: null, star: false, type: 'book' },
         { name: "Physiology", id: 2, owner: null, star: false, type: 'book' },
         { name: "Anatomy", id: 9, owner: 'berry76', star: true, type: 'note' },
@@ -34,7 +34,7 @@ const Home = () => {
         { name: "Pathology", id: 8, owner: null, star: false, type: 'book' },
         { name: "Pathology", id: 3, owner: null, star: true, type: 'note' }
     ]
-    
+
     const [notes1, SetNotes1] = useState(notes);
 
     // user authentication check
@@ -73,7 +73,7 @@ const Home = () => {
             <div className="pg-breaker"></div>
 
             <ItemList data={notes1} />
-            
+
             <Footer />
         </>
     )

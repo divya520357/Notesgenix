@@ -10,8 +10,8 @@ import { Link } from 'react-router-dom';
 
 const Account = () => {
 
-    const PersonalInfo=[
-        {Name:'Divya Aggarwal', Useraname:'@test',Email:'divya@test.com', Password:'********'}
+    const PersonalInfo = [
+        { Name: 'Divya Aggarwal', Useraname: '@test', Email: 'divya@test.com', Password: '********' }
     ]
 
     useEffect(() => {
@@ -20,19 +20,19 @@ const Account = () => {
         }
     }, [])
 
-    const onLogout = (e) =>{
+    const onLogout = (e) => {
         e.preventDefault();
         window.location = "/";
         localStorage.clear();
     }
-    
+
     return (
         <>
             <Navbar />
             <div className="pg-breaker"></div>
             <div className="info-card d-flex flex-column align-items-center m-4 mt-5 rounded-4 p-5">
-                
-                {PersonalInfo.map((item,i)=>(
+
+                {PersonalInfo.map((item, i) => (
                     <React.Fragment key={i}>
                         <img src={process.env.PUBLIC_URL + `./assets/logo.png`} className='profile-avatar justify-content-center' alt="profile avatar" />
                         <p className='justify-content-center mt-2 mb-0 profile-name'>{item.Name}</p>
@@ -47,7 +47,7 @@ const Account = () => {
                         </div>
                         <div className="info-details d-flex justify-content-between align-items-center mt-3">
                             <p className='mb-0'><b>Friends</b></p>
-                           <Link to='/account/personal' className='text-black'> <i class="fa-solid fa-angle-right"></i></Link>
+                            <Link to='/account' className='text-black'> <i class="fa-solid fa-angle-right"></i></Link>
                         </div>
                     </React.Fragment>))
                 }

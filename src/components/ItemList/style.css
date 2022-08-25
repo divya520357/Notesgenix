@@ -26,3 +26,11 @@
     width: 2.5rem;
 }
 
+.card-overlay-bg {
+    top: 0;
+    height: 100%;
+    background: white;
+    opacity: 0.6;
+    z-index: -1;
+    transition: 2s all ease-in;
+}
