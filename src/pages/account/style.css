@@ -32,3 +32,22 @@
     cursor: pointer;
 }
 
+.back-arrow{
+    margin-right:7rem;
+}
+
+.friends-page{
+    margin:5rem 0.8rem 0rem 0.8rem;
+}
+.fa-address-card{
+    margin: 0rem 0.5rem 0rem 0.3em;
+    font-size: 1.7rem;
+}
+.sync-desc{
+    font-size: 0.7rem;
+}
+
+.friend-pending img{
+    width: 15%;
+    margin-right: 0.5rem;
+}

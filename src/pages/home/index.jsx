@@ -71,7 +71,7 @@ const Home = () => {
                     <button ref={btnShared} onClick={filterStarred} className='bg-transparent border-0 mx-3 w-50 fs-5 text-gray text-decoration-none text-center position-relative'>Starred </button>
                     <div ref={btnShadow} className="btnShadow"></div>
                 </div>
-                <div className="pg-breaker" style={{zIndex:'3'}}></div>
+                <div className="pg-breaker"></div>
             </div>
             <ItemList data={notes1} />
 
