@@ -19,6 +19,12 @@ const Account = () => {
         }
     }, [])
 
+    const onLogout = (e) =>{
+        e.preventDefault();
+        window.location = "/";
+        localStorage.clear();
+    }
+    
     return (
         <>
             <Navbar />
@@ -51,8 +57,7 @@ const Account = () => {
                 <p className='mb-0 ps-3'>How can we help you?</p>
             </div>
             <div className="logout position-absolute  me-4 fs-1 d-flex justify-content-end">
-                <i class="logout-icon fa-solid bg-yellow rounded-circle p-3 fa-arrow-right-from-bracket"></i>
-
+                <i onClick={onLogout} class="logout-icon fa-solid bg-yellow rounded-circle p-3 fa-arrow-right-from-bracket"></i>
             </div>
             <Footer />
         </>
