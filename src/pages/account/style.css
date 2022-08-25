@@ -23,6 +23,7 @@ border-radius: 26px;
 .logout{
     width: -webkit-fill-available;
     margin-top: 3rem;
+    padding-bottom: 5rem;
 }
 
 .logout-icon{

@@ -7,7 +7,7 @@ const ItemCard = (props) => {
     const addNotes = useRef(null);
     
     
-    const handleAddNotes = (e) => {
+    const handleAddNotes = () => {
         overlay.current.style.bottom = '0';
         overlay.current.style.transition = 'all ease-out 0.6s'
         addNotes.current.style.display='none'
@@ -29,7 +29,7 @@ const ItemCard = (props) => {
             </div>
             {(props.data.type)==='note' ? (
                 <div ref={addNotes} className="add-notes position-fixed fs-1 d-flex justify-content-end"  >
-                <i onClick={handleAddNotes} class="logout-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
+                <i onClick={handleAddNotes} class="add-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
                 </div>
             ): null}
 
