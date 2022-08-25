@@ -34,7 +34,7 @@ const Home = () => {
         { name: "Pathology", id: 8, owner: null, star: false, type: 'book' },
         { name: "Pathology", id: 3, owner: null, star: true, type: 'note' }
     ]
-
+    
     const [notes1, SetNotes1] = useState(notes);
 
     // user authentication check
