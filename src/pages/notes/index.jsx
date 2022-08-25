@@ -13,16 +13,15 @@ const Notes = () => {
 
     // importing data
     const notes = [
-        { name: "Biology", id: 1, owner: null },
-        { name: "Physiology", id: 2, owner: null },
-        { name: "Pathology", id: 3, owner: null },
-        { name: "Anatomy", id: 4, owner: null },
-        { name: "Physiology", id: 5, owner: null },
-        { name: "Biology", id: 6, owner: 'divya520' },
-        { name: "Physiology", id: 7, owner: 'luck01' },
-        { name: "Pathology", id: 8, owner: 'harshita' },
-        { name: "Anatomy", id: 9, owner: 'berry76' },
-        { name: "Physiology", id: 10, owner: 'apple29' }
+        { name: "Biology", id: 1, owner: null, type: 'note' },
+        { name: "Anatomy", id: 9, owner: 'berry76', type: 'note' },
+        { name: "Physiology", id: 2, owner: null, type: 'note' },
+        { name: "Pathology", id: 8, owner: 'harshita', type: 'note' },
+        { name: "Pathology", id: 3, owner: null, type: 'note' },
+        { name: "Biology", id: 6, owner: 'divya520', type: 'note' },
+        { name: "Anatomy", id: 4, owner: null, type: 'note' },
+        { name: "Physiology", id: 5, owner: null, type: 'note' },
+        { name: "Physiology", id: 10, owner: 'apple29', type: 'note' }
     ]
 
     const [notes1, SetNotes1] = useState(notes.filter((note) => !note.owner));
