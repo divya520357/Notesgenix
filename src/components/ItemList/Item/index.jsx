@@ -5,26 +5,13 @@ import './style.css';
 const ItemCard = (props) => {
     const overlay = useRef(null);
     const addNotes = useRef(null);
-    let timer;
     
-    const TouchStart = (e) => {
-        e.preventDefault();
-        if (!timer) {
-            // A timeout function for adding long touch functionality
-            timer = setTimeout(() => {
-                overlay.current.style.bottom = '0';
-                overlay.current.style.transition = 'all ease-out 0.6s'
-                addNotes.current.style.display='none'
-            }, 250)
-        }
+    
+    const handleAddNotes = (e) => {
+        overlay.current.style.bottom = '0';
+        overlay.current.style.transition = 'all ease-out 0.6s'
+        addNotes.current.style.display='none'
     };
-
-    const TouchEnd = () => {
-        if (timer) {
-            clearTimeout(timer);
-            timer = null;
-        }
-    }
 
     const closeOverlay = () => {
         overlay.current.style.bottom = '-100%';
@@ -41,9 +28,8 @@ const ItemCard = (props) => {
                 <div className="itemClickOverlay w-100 h-100 position-absolute bottom-0 start-0" onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></div>
             </div>
             {(props.data.type)==='note' ? (
-                <div ref={addNotes} className="add-notes position-fixed fs-1 d-flex justify-content-end"  onTouchStart={TouchStart}
-                onTouchEnd={TouchEnd}>
-                <i onClick="." class="logout-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
+                <div ref={addNotes} className="add-notes position-fixed fs-1 d-flex justify-content-end"  >
+                <i onClick={handleAddNotes} class="logout-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
                 </div>
             ): null}
 
