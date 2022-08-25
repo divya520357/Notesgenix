@@ -5,6 +5,7 @@ import './style.css';
 
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
+import { Link } from 'react-router-dom';
 
 
 const Account = () => {
@@ -46,7 +47,7 @@ const Account = () => {
                         </div>
                         <div className="info-details d-flex justify-content-between align-items-center mt-3">
                             <p className='mb-0'><b>Friends</b></p>
-                            <i class="fa-solid fa-angle-right"></i>
+                           <Link to='/account/personal' className='text-black'> <i class="fa-solid fa-angle-right"></i></Link>
                         </div>
                     </React.Fragment>))
                 }

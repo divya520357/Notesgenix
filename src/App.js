@@ -8,6 +8,7 @@ import Home from './pages/home';
 import Notes from './pages/notes';
 import Books from './pages/books';
 import Account from './pages/account';
+import Friends from './pages/account/friends';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/notes' element={<Notes />} />
           <Route path='/books' element={<Books />} />
           <Route path='/account' element={<Account />} />
+          <Route path='/account/friends' element={<Friends />} />
         </Routes>
       </Router>
     </>

@@ -13,6 +13,11 @@ const ItemCard = (props) => {
                 </div>
                 <div className="itemClickOverlay w-100 h-100 position-absolute bottom-0 start-0" onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></div>
             </div>
+            {(props.data.type)==='note' ? (
+                <div className="add-notes position-fixed fs-1 d-flex justify-content-end">
+                <i onClick="." class="logout-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
+                </div>
+            ): null}
         </>
     );
 }

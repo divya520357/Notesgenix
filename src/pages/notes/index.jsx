@@ -62,7 +62,7 @@ const Notes = () => {
             <div className="pg-breaker"></div>
 
             <ItemList data={notes1} />
-
+           
             <Footer />
         </>
     )

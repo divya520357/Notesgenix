@@ -32,7 +32,7 @@ const ItemList = ({ data }) => {
 
     return (
         <>
-            <div className="container home_notes_container d-flex flex-wrap justify-content-evenly ">
+            <div className="container home_notes_container position-absolute d-flex flex-wrap justify-content-evenly ">
                 {data.map((item, i) => (
                     <ItemCard key={i} data={item}
                         onTouchStart={TouchStart}
@@ -40,6 +40,7 @@ const ItemList = ({ data }) => {
                     />
                 ))}
             </div>
+            
 
             <div ref={overlay} className="card-overlay bg-yellow position-fixed w-100 h-50 d-flex flex-column">
                 <div className="w-75 d-flex justify-content-start mt-3 mb-4 ms-3 align-items-center">
@@ -67,6 +68,8 @@ const ItemList = ({ data }) => {
                     <span className="text-start fs-3">Remove</span>
                 </div>
             </div>
+
+            
         </>
     )
 };
