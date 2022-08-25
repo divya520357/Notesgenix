@@ -1,8 +1,35 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './style.css';
 
 
 const ItemCard = (props) => {
+    const overlay = useRef(null);
+    const addNotes = useRef(null);
+    let timer;
+    
+    const TouchStart = (e) => {
+        e.preventDefault();
+        if (!timer) {
+            // A timeout function for adding long touch functionality
+            timer = setTimeout(() => {
+                overlay.current.style.bottom = '0';
+                overlay.current.style.transition = 'all ease-out 0.6s'
+                addNotes.current.style.display='none'
+            }, 250)
+        }
+    };
+
+    const TouchEnd = () => {
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+    }
+
+    const closeOverlay = () => {
+        overlay.current.style.bottom = '-100%';
+        overlay.current.style.transition = 'all ease-in 0.6s'
+    }
     return (
         <>
             <div className="card notes-card m-3 position-relative" style={{ width: "8rem" }}>
@@ -14,10 +41,28 @@ const ItemCard = (props) => {
                 <div className="itemClickOverlay w-100 h-100 position-absolute bottom-0 start-0" onTouchStart={props.onTouchStart} onTouchEnd={props.onTouchEnd}></div>
             </div>
             {(props.data.type)==='note' ? (
-                <div className="add-notes position-fixed fs-1 d-flex justify-content-end">
+                <div ref={addNotes} className="add-notes position-fixed fs-1 d-flex justify-content-end"  onTouchStart={TouchStart}
+                onTouchEnd={TouchEnd}>
                 <i onClick="." class="logout-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
                 </div>
             ): null}
+
+
+            <div ref={overlay} className="card-overlay bg-yellow position-fixed w-100  d-flex align-items-center">
+                <div className="d-flex justify-content-start align-items-start ps-3">
+                    <i onClick={closeOverlay} className="fa-solid fa-angle-left fa-lg"></i>
+                </div>
+
+                <div className="w-75 d-flex flex-column justify-item-scenter my-2  align-items-center">
+                    <i className="fa-solid fa-upload fa-lg p-2 m-1"></i>
+                    <span className="text-start fs-3">Scan</span>
+                </div>
+
+                <div className="w-75 d-flex flex-column justify-item-scenter my-2  align-items-center">
+                    <i className="fa-solid fa-camera fa-lg p-2 m-1"></i>
+                    <span className="text-start fs-3">Upload</span>
+                </div>
+            </div>
         </>
     );
 }

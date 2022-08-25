@@ -34,7 +34,7 @@ const ItemList = ({ data }) => {
         <>
             <div className="container home_notes_container position-absolute d-flex flex-wrap justify-content-evenly ">
                 {data.map((item, i) => (
-                    <ItemCard key={i} data={item}
+                    <ItemCard key={i} data={item} 
                         onTouchStart={TouchStart}
                         onTouchEnd={TouchEnd}
                     />
