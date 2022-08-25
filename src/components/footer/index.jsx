@@ -13,7 +13,7 @@ const Footer = () => {
                         <i className="fa-solid fa-house p-1"></i>
                         Home
                     </NavLink>
-                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes/personal'>
+                    <NavLink className="footer-btn d-flex flex-column justify-content-center align-items-center text-decoration-none" to='/notes'>
                         <i className="fa-solid fa-file p-1"></i>
                         Notes
                     </NavLink>

@@ -1,4 +1,4 @@
-import React, {useEffect,useState, useRef} from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './style.css';
 
 import ItemList from '../../components/ItemList';
@@ -13,16 +13,16 @@ const Books = () => {
 
     // importing data
     const books = [
-        { name: "Biology", id: 1, owner: null, star: true , type:'book'},
-        { name: "Physiology", id: 2, owner: null, star: false, type:'book'},
-        { name: "Pathology", id: 3, owner: null, star: false , type:'book'},
-        { name: "Anatomy", id: 4, owner: null, star: true , type:'book'},
-        { name: "Physiology", id: 5, owner: null, star: false, type:'book' },
-        { name: "Biology", id: 6, owner: null, star: true , type:'book'},
-        { name: "Physiology", id: 7, owner: null, star: false, type:'book' },
-        { name: "Pathology", id: 8, owner: null, star: false, type:'book' },
-        { name: "Anatomy", id: 9, owner: null, star: true, type:'book' },
-        { name: "Physiology", id: 10, owner: null, star: false, type:'book' }
+        { name: "Biology", id: 1, owner: null, star: true, type: 'book' },
+        { name: "Physiology", id: 2, owner: null, star: false, type: 'book' },
+        { name: "Pathology", id: 3, owner: null, star: false, type: 'book' },
+        { name: "Anatomy", id: 4, owner: null, star: true, type: 'book' },
+        { name: "Physiology", id: 5, owner: null, star: false, type: 'book' },
+        { name: "Biology", id: 6, owner: null, star: true, type: 'book' },
+        { name: "Physiology", id: 7, owner: null, star: false, type: 'book' },
+        { name: "Pathology", id: 8, owner: null, star: false, type: 'book' },
+        { name: "Anatomy", id: 9, owner: null, star: true, type: 'book' },
+        { name: "Physiology", id: 10, owner: null, star: false, type: 'book' }
     ]
 
     const [books1, SetBooks1] = useState(books);
@@ -37,7 +37,7 @@ const Books = () => {
     // to filter personal items i.e items all books owned
     function filterPrivate(e) {
         e.preventDefault();
-        const filteredBooks = books.filter((note) => !note.star);
+        const filteredBooks = books;
         SetBooks1(filteredBooks);
 
         btnShadow.current.style.left = "11%";

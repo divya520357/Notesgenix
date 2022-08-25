@@ -1,3 +1,7 @@
+.footer-container {
+    /* z-index: 5; */
+}
+
 .footer-bar a {
     width: 25%;
     color: var(--gray);

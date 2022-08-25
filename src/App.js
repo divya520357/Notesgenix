@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Login from './pages/login';
 import Home from './pages/home';
-// import Notes from './pages/notes';
+import Notes from './pages/notes';
 import Books from './pages/books';
 import Account from './pages/account';
 
@@ -15,10 +15,10 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<Login />} />
-          <Route exact path='/home' element={<Home />} />
-          {/* <Route exact path='/notes' element={<Notes />} /> */}
-          <Route exact path='/books' element={<Books />} />
-          <Route exact path='/account' element={<Account />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/notes' element={<Notes />} />
+          <Route path='/books' element={<Books />} />
+          <Route path='/account' element={<Account />} />
         </Routes>
       </Router>
     </>
