@@ -28,7 +28,7 @@ const ItemCard = (props) => {
             </div>
             {(props.data.type) === 'note' ? (
                 <div ref={addNotes} className="add-notes position-fixed fs-1 d-flex justify-content-end"  >
-                <i onClick={handleAddNotes} class="add-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
+                <i onClick={handleAddNotes} className="add-icon fa-solid fa-plus bg-yellow rounded-circle p-3 "></i>
                 </div>
             ) : null}
 

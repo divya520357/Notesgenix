@@ -30,7 +30,7 @@ const Account = () => {
         <>
             <Navbar />
             <div className="pg-breaker"></div>
-            <div className="info-card d-flex flex-column align-items-center m-4 mt-5 rounded-4 p-5">
+            <div className="info-card d-flex flex-column align-items-center p-5">
 
                 {PersonalInfo.map((item, i) => (
                     <React.Fragment key={i}>
