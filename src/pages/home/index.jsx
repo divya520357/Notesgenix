@@ -13,16 +13,26 @@ const Home = () => {
 
     // importing data
     const notes = [
-        { name: "Biology", id: 1, owner: null },
-        { name: "Physiology", id: 2, owner: null },
-        { name: "Pathology", id: 3, owner: null },
-        { name: "Anatomy", id: 4, owner: null },
-        { name: "Physiology", id: 5, owner: null },
-        { name: "Biology", id: 6, owner: 'divya520' },
-        { name: "Physiology", id: 7, owner: 'luck01' },
-        { name: "Pathology", id: 8, owner: 'harshita' },
-        { name: "Anatomy", id: 9, owner: 'berry76' },
-        { name: "Physiology", id: 10, owner: 'apple29' }
+        { name: "Biology", id: 1, owner: null, star: true,type:'note' },
+        { name: "Physiology", id: 2, owner: null, star: false, type:'note' },
+        { name: "Pathology", id: 3, owner: null,star: true, type:'note' },
+        { name: "Anatomy", id: 4, owner: null, star: false,type:'note' },
+        { name: "Physiology", id: 5, owner: null,star: false, type:'note' },
+        { name: "Biology", id: 6, owner: 'divya520', star: true, type:'note' },
+        { name: "Physiology", id: 7, owner: 'luck01',star: false, type:'note' },
+        { name: "Pathology", id: 8, owner: 'harshi067357',star: true, type:'note' },
+        { name: "Anatomy", id: 9, owner: 'berry76',star: false, type:'note' },
+        { name: "Physiology", id: 10, owner: 'apple29',star: true, type:'note' },
+        { name: "Biology", id: 1, owner: null, star: true , type:'book'},
+        { name: "Physiology", id: 2, owner: null, star: false, type:'book'},
+        { name: "Pathology", id: 3, owner: null, star: false , type:'book'},
+        { name: "Anatomy", id: 4, owner: null, star: true , type:'book'},
+        { name: "Physiology", id: 5, owner: null, star: false, type:'book' },
+        { name: "Biology", id: 6, owner: null, star: true , type:'book'},
+        { name: "Physiology", id: 7, owner: null, star: false, type:'book' },
+        { name: "Pathology", id: 8, owner: null, star: false, type:'book' },
+        { name: "Anatomy", id: 9, owner: null, star: true, type:'book' },
+        { name: "Physiology", id: 10, owner: null, star: false, type:'book' }
     ]
 
     const [notes1, SetNotes1] = useState(notes);
