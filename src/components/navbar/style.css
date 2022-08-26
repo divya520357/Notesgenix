@@ -1,5 +1,6 @@
 .home_heading {
     font-size: 3rem;
+    z-index:100;
 }
 
 .home_nav a {

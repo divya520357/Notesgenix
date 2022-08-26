@@ -64,14 +64,15 @@ const Home = () => {
 
     return (
         <>
-            <Navbar />
-            <div className="home_nav my-2 d-flex justify-content-center align-items-center position-relative">
-                <button ref={btnPersonal} onClick={filterPersonal} className='bg-transparent border-0 mx-3 w-50 fs-5 text-gray text-decoration-none text-center position-relative'>Personal </button>
-                <button ref={btnShared} onClick={filterStarred} className='bg-transparent border-0 mx-3 w-50 fs-5 text-gray text-decoration-none text-center position-relative'>Starred </button>
-                <div ref={btnShadow} className="btnShadow"></div>
+            <div className="position-fixed w-100 top-0" style={{zIndex:'2'}}>
+                <Navbar />
+                <div className="home_nav d-flex justify-content-center bg-white align-items-center position-relative bg-white w-100">
+                    <button ref={btnPersonal} onClick={filterPersonal} className='bg-transparent border-0 mx-3 w-50 fs-5 text-gray text-decoration-none text-center position-relative'>Personal </button>
+                    <button ref={btnShared} onClick={filterStarred} className='bg-transparent border-0 mx-3 w-50 fs-5 text-gray text-decoration-none text-center position-relative'>Starred </button>
+                    <div ref={btnShadow} className="btnShadow"></div>
+                </div>
+                <div className="pg-breaker"></div>
             </div>
-            <div className="pg-breaker"></div>
-
             <ItemList data={notes1} />
 
             <Footer />
